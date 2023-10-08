@@ -20,7 +20,7 @@ const RightPart = () => {
             <section className='my-5'>
                 <h1 className='text-xl font-bold'>Get Verified</h1>
                 <h1 className='my-2 font-bold'>Subcribe to unclock news Features</h1>
-                <Button className='contained' sx={{ padding: "10px", paddingX: "20px", borderRadius: "25px" }}>
+                <Button variant='contained' sx={{ padding: "10px", paddingX: "20px", borderRadius: "25px" }}>
                     Get Verified
                 </Button>
             </section>
