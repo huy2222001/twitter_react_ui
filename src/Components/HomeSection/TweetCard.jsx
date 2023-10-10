@@ -52,7 +52,7 @@ const TweetCard = () => {
                     onClick={() => navigate(`/profile/${6}`)}
                     className='cursor-pointer'
                     alt='username'
-                    src='https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/273876435_684682269377301_3145063648183618090_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_ohc=luydAKwtbFkAX-QQzgM&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfBvIz6sOST7pXDTGT0RB9BMjDFBqtgaeOEfeyy7nAt96g&oe=6524251B' />
+                    src='https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/236954275_574709193707943_83246847164485976_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=1b51e3&_nc_ohc=uLaQcTJoWBMAX_LwQNz&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfCN6Fl-EtPLARY9rEVN5-i70M9hENIsRjp1U5AHHq-yjA&oe=652A72FF' />
                 <div className='w-full'>
                     <div className='flex justify-between items-center'>
                         <div className='flex cursor-pointer items-center space-x-2'>
@@ -86,9 +86,10 @@ const TweetCard = () => {
                         </div>
                     </div>
                     <div className='mt-2'>
-                        <div className='cursor-pointer'>
+                        <div onClick={()=>navigate(`/twit/${3}`)}
+                            className='cursor-pointer'>
                             <p className='mb-2 p-0'>Fighting</p>
-                            <img className='w-[28rem] border border-gray-400 p-5 rounded-md' src="https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/273876435_684682269377301_3145063648183618090_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_ohc=luydAKwtbFkAX-QQzgM&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfBvIz6sOST7pXDTGT0RB9BMjDFBqtgaeOEfeyy7nAt96g&oe=6524251B" alt="" />
+                            <img className='w-[28rem] border border-gray-400 p-5 rounded-md' src="https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/318797718_885021966009996_1535236484124388055_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5614bc&_nc_ohc=cwqFs4c-LC0AX9cHW29&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfCTg_qFBf1JOAO7ZZy-zerdOnc605psK0K2_7zyBfrtiA&oe=652A2DF6" alt="" />
                         </div>
                         <div className='py-5 flex flex-wrap justify-between items-center'>
                             <div className='space-x-3 flex items-center text-gray-600'>

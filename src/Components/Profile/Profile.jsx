@@ -7,6 +7,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
 import TweetCard from '../HomeSection/TweetCard';
+import ProfileModal from './ProfileModal';
 const Profile = () => {
   const handleTabChange = (event, newValue)=>{
     setTabValue(newValue)
@@ -17,12 +18,14 @@ const Profile = () => {
       console.log("users twits")
     }
   }
+  const [openProfileModal, setOpenProfileModal]= useState(false)
+  const handleOpenProfileModel = ()=> setOpenProfileModal(true)
+  const handleClose = ()=> setOpenProfileModal(false)
+
   const [tabValue, setTabValue]=useState("1")
   const navigate = useNavigate();
   const handleBack = () => navigate(-1);
-  const handleOpenProfileModel = () => {
-    console.log("open profile model")
-  }
+  
 
   const handleFollowUser = () => {
     console.log("follow user")
@@ -32,7 +35,7 @@ const Profile = () => {
 
   return (
     <div>
-      <section className={`z-50 flex items-center sticky top-0 bg-opacity-95`}>
+      <section className={`bg-white z-50 flex items-center sticky top-0 bg-opacity-95`}>
         <KeyboardBackspaceIcon className='cursor-pointer' onClick={handleBack} />
         <h1 className='py-5 text-xl font-bold opacity-90 ml-5'>Huy ne</h1>
       </section>
@@ -46,7 +49,7 @@ const Profile = () => {
           <Avatar
             className='transform -translate-y-24'
             alt='yen anh'
-            src='https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/273876435_684682269377301_3145063648183618090_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_ohc=luydAKwtbFkAX-QQzgM&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfBvIz6sOST7pXDTGT0RB9BMjDFBqtgaeOEfeyy7nAt96g&oe=6524251B'
+            src='https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/284281688_748422246336636_8130065382359478227_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5614bc&_nc_ohc=iWAbpX8wEjEAX8apAvO&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfC8n6PUN5Win4Ootj6mxyME01-Lj_NIU1buROGLIGIdMw&oe=652A185B'
             sx={{ width: "10rem", height: "10rem", border: "4px solid white" }}
           />
           {true ? <Button
@@ -114,6 +117,9 @@ const Profile = () => {
 
           </TabContext>
         </Box>
+      </section>
+      <section>
+        <ProfileModal handleClose={handleClose} open={openProfileModal}/>
       </section>
     </div>
   )

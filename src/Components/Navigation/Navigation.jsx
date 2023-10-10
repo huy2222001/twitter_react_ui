@@ -48,7 +48,7 @@ const Navigation = () => {
                 </div>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center space-x-3'>
-                        <Avatar alt='username' src='https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/273876435_684682269377301_3145063648183618090_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_ohc=luydAKwtbFkAX-QQzgM&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfBvIz6sOST7pXDTGT0RB9BMjDFBqtgaeOEfeyy7nAt96g&oe=6524251B' />
+                        <Avatar alt='username' src='https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/284281688_748422246336636_8130065382359478227_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5614bc&_nc_ohc=iWAbpX8wEjEAX8apAvO&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfC8n6PUN5Win4Ootj6mxyME01-Lj_NIU1buROGLIGIdMw&oe=652A185B' />
                         <div>
                             <span>Lê Ngọc Yến Anh</span>
                             <span className='opacity-70'>@lnyenanh</span>
