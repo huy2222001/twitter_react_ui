@@ -60,7 +60,6 @@ export default function ProfileModal({open, handleClose}) {
                             <div className='flex items-center space-x-3'>
                                 <IconButton onClick={handleClose} aria-aria-label='delete'>
                                     <CloseIcon />
-
                                 </IconButton>
                                 <p className=''>Edit Profile</p>
                             </div>
