@@ -9,6 +9,7 @@ import FileUploadIcon from '@mui/icons-material/FileUpload';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { FavoriteOutlined } from '@mui/icons-material';
+import ReplyModal from './ReplyModal';
 const TweetCard = () => {
 
 
@@ -16,6 +17,10 @@ const TweetCard = () => {
     const navigate = useNavigate();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
+    const [openReplyModal, setOpenReplyModal]= React.useState(false)
+    const handleOpenReplyModel = ()=> setOpenReplyModal(true)
+    const handleCloseReplyModal = ()=> setOpenReplyModal(false)
+
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -27,9 +32,7 @@ const TweetCard = () => {
         handleClose();
     }
 
-    const handleOpenReplyModel = ()=>{
-        console.log("open model");
-    }
+    
 
     const handleCreateRetweet = ()=> {
         console.log("handle create retweet ")
@@ -41,7 +44,7 @@ const TweetCard = () => {
     }
 
     return (
-        <div className=''>
+        <React.Fragment>
 
             {/* <div className='flex items-center font-semibold text-gray-700 py-2 '>
             <RepeatIcon/>
@@ -68,7 +71,7 @@ const TweetCard = () => {
                                 aria-expanded={open ? 'true' : undefined}
                                 onClick={handleClick}
                             >
-                                <MoreHorizIcon />
+                                <MoreHorizIcon/>
                             </Button>
                             <Menu
                                 id="basic-menu"
@@ -122,7 +125,10 @@ const TweetCard = () => {
                     </div>
                 </div>
             </div>
-        </div>
+            <section>
+                <ReplyModal open={openReplyModal} handleClose={handleCloseReplyModal}/>
+            </section>
+        </React.Fragment>
     )
 }
 

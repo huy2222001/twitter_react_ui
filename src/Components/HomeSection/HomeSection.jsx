@@ -45,7 +45,7 @@ const HomeSection = () => {
             </section>
             <section className={`pb-10`}>
                 <div className='flex space-x-5'>
-                    <Avatar alt='username' src='https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/273876435_684682269377301_3145063648183618090_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5614bc&_nc_ohc=luydAKwtbFkAX-QQzgM&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfBvIz6sOST7pXDTGT0RB9BMjDFBqtgaeOEfeyy7nAt96g&oe=6524251B' />
+                    <Avatar alt='username' src='https://scontent.fsgn16-1.fna.fbcdn.net/v/t39.30808-6/236954275_574709193707943_83246847164485976_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=1b51e3&_nc_ohc=uLaQcTJoWBMAX_LwQNz&_nc_ht=scontent.fsgn16-1.fna&oh=00_AfCN6Fl-EtPLARY9rEVN5-i70M9hENIsRjp1U5AHHq-yjA&oe=652A72FF' />
                     <div className='w-full'>
                         <form onSubmit={formik.handleSubmit}>
                             <div>
